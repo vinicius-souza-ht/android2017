@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_em_metros"
+        android:id="@+id/tv_conv_label"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_conv_label"
+        android:id="@+id/ed_conv_metros"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_km"
+        android:layout_below="@id/ed_conv_metros"
+        android:text="@string/km"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conv_metros"
+        android:layout_toRightOf="@id/bt_km"
+        android:id="@+id/bt_cm"
+        android:text="@string/cm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conv_metros"
+        android:layout_toRightOf="@id/bt_cm"
+        android:id="@+id/bt_milha"
+        android:text="@string/milha"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conv_metros"
+        android:layout_toRightOf="@id/bt_milha"
+        android:id="@+id/bt_polegadas"
+        android:text="@string/pol"/>
+</RelativeLayout>

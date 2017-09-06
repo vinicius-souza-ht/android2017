@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FDPApp</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="meu_primeiro_xml">Meu Primeiro XML!</string>
+    <string name="nome">Nome: </string>
+    <string name="numero1">Número 1: </string>
+    <string name="numero2">Número 2: </string>
+    <string name="jao">Jão da Silva </string>
+    <string name="ok">OK </string>
+    <string name="sinalSoma">+</string>
+    <string name="sinalSubtracao">-</string>
+    <string name="sinalMultiplicacao">*</string>
+    <string name="sinalDivisao">/</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="conversor">Conversor</string>
+    <string name="valor_em_metros">Digite o valor em metros:</string>
+    <string name="km">Km</string>
+    <string name="cm">Cm</string>
+    <string name="milha">Milha</string>
+    <string name="pol">Pol</string>
+    <string name="valor_convertido">Valor Convertido:</string>
+    <string name="fechar">Fechar</string>
+    <string name="agenda">Agenda</string>
+    <string name="agenda2">Agenda 2</string>
+    <string name="novo">Novo</string>
+    <string name="id">ID:</string>
+    <string name="telefone">Telefone:</string>
+    <string name="email">E-mail:</string>
+    <string name="salvar">Salvar</string>
+</resources>
