@@ -45,4 +45,10 @@ public class MenuActivity extends AppCompatActivity {
         Intent irParaAgenda2 = new Intent(MenuActivity.this, ListaAgendaActivity.class);
         startActivity(irParaAgenda2);
     }
+
+    @OnClick(R.id.btn_menu_camera)
+    public void botaoMenuCamera(){
+        Intent irParaCamera = new Intent(MenuActivity.this, CameraActivity.class);
+        startActivity(irParaCamera);
+    }
 }

@@ -24,6 +24,8 @@
         <activity android:name=".ResultadoConversaoActivity"></activity>
         <activity android:name=".AgendaActivity"></activity>
         <activity android:name=".ListaAgendaActivity"></activity>
+        <activity android:name=".CameraActivity"></activity>
+
 
     </application>
 

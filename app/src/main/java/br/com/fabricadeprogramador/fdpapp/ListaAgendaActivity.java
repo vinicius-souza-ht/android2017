@@ -46,9 +46,10 @@ public class ListaAgendaActivity extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Pessoa pessoaSel = (Pessoa) adapterView.getItemAtPosition(i);
-//                BancoDeDados bancoDeDados = new BancoDeDados(ListaAgendaActivity.this);
-//                bancoDeDados.excluir(pessoaSel);
-                GerenciadorAgenda.excluir(pessoaSel);
+                //GerenciadorAgenda.excluir(pessoaSel);
+
+                BancoDeDados bancoDeDados = new BancoDeDados(ListaAgendaActivity.this);
+                bancoDeDados.excluir(pessoaSel);
                 atualiza();
 
                 return true;
@@ -64,8 +65,9 @@ public class ListaAgendaActivity extends AppCompatActivity {
     }
 
     public void atualiza(){
-//        BancoDeDados banco = new BancoDeDados(this);
-        PessoaListAdapter adapter = new PessoaListAdapter(this, GerenciadorAgenda.getPessoasList());
+        BancoDeDados banco = new BancoDeDados(this);
+//        PessoaListAdapter adapter = new PessoaListAdapter(this, GerenciadorAgenda.getPessoasList());
+        PessoaListAdapter adapter = new PessoaListAdapter(this, banco.buscarTodos());
         listaAgenda.setAdapter(adapter);
     }
 

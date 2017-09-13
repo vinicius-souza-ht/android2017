@@ -1,5 +1,7 @@
 package br.com.fabricadeprogramador.fdpapp;
 
+import android.graphics.Bitmap;
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -13,11 +15,11 @@ public class Pessoa implements Serializable{
     private String nome;
     private String telefone;
     private String email;
-    private Integer imagem;
+    private Bitmap imagem;
 
     public Pessoa(){}
 
-    public Pessoa(Long id, String nome, String telefone, String email, Integer imagem) {
+    public Pessoa(Long id, String nome, String telefone, String email, Bitmap imagem) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
@@ -25,7 +27,7 @@ public class Pessoa implements Serializable{
         this.imagem = imagem;
     }
 
-    public Pessoa(String nome, String telefone, String email, Integer imagem) {
+    public Pessoa(String nome, String telefone, String email, Bitmap imagem) {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
@@ -66,11 +68,11 @@ public class Pessoa implements Serializable{
         this.email = email;
     }
 
-    public Integer getImagem() {
+    public Bitmap getImagem() {
         return imagem;
     }
 
-    public void setImagem(Integer imagem) {
+    public void setImagem(Bitmap imagem) {
         this.imagem = imagem;
     }
 

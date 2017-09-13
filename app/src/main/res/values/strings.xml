@@ -27,4 +27,7 @@
     <string name="telefone">Telefone:</string>
     <string name="email">E-mail:</string>
     <string name="salvar">Salvar</string>
+    <string name="alterarImagem">Alterar imagem</string>
+    <string name="registrar">Registrar</string>
+    <string name="camera">Camera</string>
 </resources>
