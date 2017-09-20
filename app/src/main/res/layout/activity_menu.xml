@@ -33,4 +33,16 @@
         android:text="@string/camera"
         android:id="@+id/btn_menu_camera"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mapa"
+        android:id="@+id/btn_menu_mapa"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        android:id="@+id/btn_menu_buscar_endereco"/>
+
 </LinearLayout>

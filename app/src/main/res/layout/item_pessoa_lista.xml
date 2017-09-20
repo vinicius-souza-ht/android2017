@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <ImageView
         android:layout_width="50dp"
@@ -12,20 +13,24 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_lista_item_id"/>
+        android:id="@+id/tv_lista_item_id"
+        android:layout_below="@id/imagem_item_lista"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_lista_item_nome"/>
+        android:id="@+id/tv_lista_item_nome"
+        android:layout_below="@id/tv_lista_item_id"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_lista_item_telefone"/>
+        android:id="@+id/tv_lista_item_telefone"
+        android:layout_below="@id/tv_lista_item_nome"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_lista_item_email"/>
-</LinearLayout>
+        android:id="@+id/tv_lista_item_email"
+        android:layout_below="@id/tv_lista_item_telefone"/>
+</RelativeLayout>

@@ -16,7 +16,7 @@ import java.util.List;
 public class BancoDeDados extends SQLiteOpenHelper {
 
     public static final String NOME_BANCO = "fdpdb";
-    public static final int VERSAO_BANCO = 1;
+    public static final int VERSAO_BANCO = 2;
 
     public BancoDeDados(Context context) {
         super(context, NOME_BANCO, null, VERSAO_BANCO);
@@ -24,7 +24,7 @@ public class BancoDeDados extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE tbpessoa (id integer primary key, nome text, telefone text, email text)";
+        String sql = "CREATE TABLE tbpessoa (id integer primary key, nome text, telefone text, email text, imagem integer)";
         db.execSQL(sql);
     }
 
@@ -52,6 +52,7 @@ public class BancoDeDados extends SQLiteOpenHelper {
                 pessoa.setNome(cursor.getString(1));
                 pessoa.setTelefone(cursor.getString(2));
                 pessoa.setEmail(cursor.getString(3));
+                pessoa.setImagem(cursor.getInt(4));
 
                 lista.add(pessoa);
             } while(cursor.moveToNext());
@@ -77,6 +78,7 @@ public class BancoDeDados extends SQLiteOpenHelper {
             pessoa.setNome(cursor.getString(1));
             pessoa.setTelefone(cursor.getString(2));
             pessoa.setEmail(cursor.getString(3));
+            pessoa.setImagem(cursor.getInt(4));
         }
 
         db.close();
@@ -107,6 +109,7 @@ public class BancoDeDados extends SQLiteOpenHelper {
         values.put("nome", pessoa.getNome());
         values.put("email", pessoa.getEmail());
         values.put("telefone", pessoa.getTelefone());
+        values.put("imagem", pessoa.getImagem());
 
         if(pessoa.getId() == null){
             adicionar(pessoa, values);

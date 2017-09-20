@@ -15,11 +15,11 @@ public class Pessoa implements Serializable{
     private String nome;
     private String telefone;
     private String email;
-    private Bitmap imagem;
+    private Integer imagem;
 
     public Pessoa(){}
 
-    public Pessoa(Long id, String nome, String telefone, String email, Bitmap imagem) {
+    public Pessoa(Long id, String nome, String telefone, String email, Integer imagem) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
@@ -27,7 +27,7 @@ public class Pessoa implements Serializable{
         this.imagem = imagem;
     }
 
-    public Pessoa(String nome, String telefone, String email, Bitmap imagem) {
+    public Pessoa(String nome, String telefone, String email, Integer imagem) {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
@@ -68,11 +68,11 @@ public class Pessoa implements Serializable{
         this.email = email;
     }
 
-    public Bitmap getImagem() {
+    public Integer getImagem() {
         return imagem;
     }
 
-    public void setImagem(Bitmap imagem) {
+    public void setImagem(Integer imagem) {
         this.imagem = imagem;
     }
 

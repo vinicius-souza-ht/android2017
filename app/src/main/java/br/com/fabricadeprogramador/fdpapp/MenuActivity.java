@@ -51,4 +51,16 @@ public class MenuActivity extends AppCompatActivity {
         Intent irParaCamera = new Intent(MenuActivity.this, CameraActivity.class);
         startActivity(irParaCamera);
     }
+
+    @OnClick(R.id.btn_menu_mapa)
+    public void botaoMenuMapa(){
+        Intent irParaMapa = new Intent(MenuActivity.this, MapsActivity.class);
+        startActivity(irParaMapa);
+    }
+
+    @OnClick(R.id.btn_menu_buscar_endereco)
+    public void botaoMenuBuscador(){
+        Intent irParaMapa = new Intent(MenuActivity.this, BuscadorActivity.class);
+        startActivity(irParaMapa);
+    }
 }

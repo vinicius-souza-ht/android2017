@@ -37,7 +37,7 @@ public class AgendaActivity extends AppCompatActivity {
     @Bind(R.id.ed_agenda_email)
     EditText edEmail;
 
-    private Bitmap photo;
+    public Bitmap photo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,6 +57,7 @@ public class AgendaActivity extends AppCompatActivity {
                 edNome.setText(pessoaSel.getNome());
                 edEmail.setText(pessoaSel.getEmail());
                 edTelefone.setText(pessoaSel.getTelefone());
+                userImage.setImageResource(pessoaSel.getImagem());
             }
         }
 
@@ -75,6 +76,7 @@ public class AgendaActivity extends AppCompatActivity {
         if(requestCode == CAMERA_REQUEST && resultCode == RESULT_OK){
             photo = (Bitmap) data.getExtras().get("data");
             userImage.setImageBitmap(photo);
+
         } else {
             Toast.makeText(this, "Imagem não carregada", Toast.LENGTH_SHORT).show();
         }
@@ -97,7 +99,7 @@ public class AgendaActivity extends AppCompatActivity {
         pessoa.setNome(nome);
         pessoa.setTelefone(telefone);
         pessoa.setEmail(email);
-        pessoa.setImagem(photo);
+//        pessoa.setImagem(photo);
 
         //TODO: Salvar em algum lugar
 //        GerenciadorAgenda.salvar(pessoa); //Salva na Lista

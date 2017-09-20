@@ -30,4 +30,7 @@
     <string name="alterarImagem">Alterar imagem</string>
     <string name="registrar">Registrar</string>
     <string name="camera">Camera</string>
+    <string name="mapa">Mapa</string>
+    <string name="endereco">Endereço:</string>
+    <string name="buscar">Buscar</string>
 </resources>
